@@ -1,7 +1,326 @@
-<!DOCTYPE html>
 
-<html>
-  <body>
-    Ray was here.
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: white;
+      padding: 20px 8%;
+      border-bottom: 1px solid #eeeeee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h2 {
+      color: #2859c5;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333333;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #2859c5;
+    }
+
+    .hero {
+      padding: 110px 8%;
+      background: #f7f9fc;
+    }
+
+    .hero p:first-child {
+      color: #2859c5;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #2859c5;
+    }
+
+    .hero .description {
+      max-width: 600px;
+      color: #666666;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2859c5;
+      color: white;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .button:hover {
+      background: #1e46a0;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: #666666;
+      margin-bottom: 25px;
+    }
+
+    .about-box {
+      background: #f7f9fc;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #f0f4ff;
+      color: #2859c5;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      padding: 25px;
+      transition: 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px #0000000d;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #666666;
+      margin-bottom: 15px;
+    }
+
+    .project a {
+      color: #2859c5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #f7f9fc;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #666666;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #777777;
+      border-top: 1px solid #eeeeee;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Your Name</h2>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <p>WELCOME TO MY PORTFOLIO</p>
+
+      <h1>Hello, I'm <span>Your Name.</span></h1>
+
+      <p class="description">
+        I'm a student who enjoys learning new skills,
+        solving problems, and exploring technology.
+        This website showcases my background and projects.
+      </p>
+
+      <a href="#projects" class="button">View My Projects</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p class="subtitle">
+        Learn a little more about me.
+      </p>
+
+      <div class="about-box">
+        <p>
+          Hello! I'm Your Name. I'm currently a student
+          interested in technology, programming, and
+          learning new things. I enjoy challenging myself
+          and developing skills that will help me in my future career.
+        </p>
+        <br>
+        <p>
+          My goal is to continue learning, gain experience,
+          and create projects that solve real problems.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <p class="subtitle">
+        Some of the skills and topics I am learning.
+      </p>
+
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Communication</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <p class="subtitle">
+        Here are some examples of my work.
+      </p>
+
+      <div class="projects">
+        <div class="project">
+          <h3>Personal Website</h3>
+          <p>
+            A personal portfolio website built with
+            HTML and CSS.
+          </p>
+          <a href="#home">Learn More →</a>
+        </div>
+
+        <div class="project">
+          <h3>Python Project</h3>
+          <p>
+            A programming project that helps me practice
+            coding and logical thinking.
+          </p>
+          <a href="https://github.com/" target="_blank"
+             rel="noopener noreferrer">GitHub →</a>
+        </div>
+
+        <div class="project">
+          <h3>Future Project</h3>
+          <p>
+            A space to share another project, school
+            assignment, or personal idea.
+          </p>
+          <a href="#contact">Contact Me →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+
+      <p>
+        Feel free to visit my GitHub profile to see my work.
+      </p>
+
+      <a class="button"
+         href="https://github.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Visit My GitHub
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> Your Name.
+      All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
 </html>
